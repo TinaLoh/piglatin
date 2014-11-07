@@ -6,17 +6,17 @@ describe PigClasser do
     expect(translation).to be ==  "appleay"
   end
 
-  xit "translates a word beginning with a consonant" do
+  it "translates a word beginning with a consonant" do
     translation = PigClasser.translate("banana")
     expect(translation).to be ==  "ananabay"
   end
 
-  xit "translates a word beginning with two consonants" do
+  it "translates a word beginning with two consonants" do
     translation = PigClasser.translate("cherry")
     expect(translation).to be ==  "errychay"
   end
 
-  xit "translates two words" do
+  it "translates two words" do
     translation = PigClasser.translate("eat pie")
     expect(translation).to be ==  "eatay iepay"
   end
